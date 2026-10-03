@@ -1,0 +1,469 @@
+.services-page {
+    min-height: calc(100vh - 80px);
+    background: #f4f7fb;
+    padding: 45px 6%;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.services-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 38px;
+}
+
+.services-label {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.services-header h1 {
+    margin: 0;
+    color: #172554;
+    font-size: 38px;
+}
+
+.services-header p {
+    margin: 12px auto 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   GRID
+================================ */
+
+.services-grid {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.service-card {
+    position: relative;
+
+    background: white;
+
+    border: 1px solid #e4e9f1;
+
+    border-radius: 20px;
+
+    padding: 27px 23px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+
+/* TOP LINE */
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #2563eb;
+}
+
+
+/* ================================
+   TAG
+================================ */
+
+.service-tag {
+    display: inline-block;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    padding: 6px 9px;
+
+    border-radius: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   ICON
+================================ */
+
+.service-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #eef4ff;
+
+    font-size: 31px;
+
+    margin-bottom: 18px;
+
+    transition: transform 0.25s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+
+/* ================================
+   TITLE
+================================ */
+
+.service-card h2 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 21px;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.service-description {
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    min-height: 58px;
+
+    margin: 10px 0 18px;
+}
+
+
+/* ================================
+   PRICE / TIME
+================================ */
+
+.service-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    padding: 12px 0;
+
+    border-top: 1px solid #edf1f6;
+
+    border-bottom: 1px solid #edf1f6;
+}
+
+.service-info div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.service-info span {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+.service-info strong {
+    color: #172554;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.service-features {
+    margin: 17px 0;
+}
+
+.service-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 8px 0;
+
+    color: #475569;
+
+    font-size: 11px;
+}
+
+.service-feature span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    background: #dcfce7;
+
+    color: #16a34a;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.service-book-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: 0.2s;
+}
+
+.service-book-btn:hover {
+    background: #1d4ed8;
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.22);
+}
+
+.service-book-btn span {
+    font-size: 17px;
+}
+
+
+/* ================================
+   BOTTOM BANNER
+================================ */
+
+.service-bottom-banner {
+    max-width: 1250px;
+
+    margin: 30px auto 0;
+
+    background: white;
+
+    border: 1px solid #e4e9f1;
+
+    border-radius: 18px;
+
+    padding: 17px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.banner-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.service-bottom-banner h3 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 14px;
+}
+
+.service-bottom-banner p {
+    margin: 4px 0 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.banner-badge {
+    margin-left: auto;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    padding: 9px 13px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* ================================
+   DIFFERENT CARD ACCENTS
+================================ */
+
+.service-2::before {
+    background: #8b5cf6;
+}
+
+.service-2 .service-tag {
+    color: #7c3aed;
+    background: #f3e8ff;
+}
+
+.service-3::before {
+    background: #ef4444;
+}
+
+.service-3 .service-tag {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+.service-4::before {
+    background: #06b6d4;
+}
+
+.service-4 .service-tag {
+    color: #0891b2;
+    background: #cffafe;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1050px) {
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .services-page {
+        padding: 30px 15px;
+    }
+
+    .services-header h1 {
+        font-size: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-bottom-banner {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .banner-badge {
+        margin-left: 0;
+    }
+}

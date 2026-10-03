@@ -1,0 +1,450 @@
+/* =========================================
+   BOOKING PAGE
+========================================= */
+
+.booking-page {
+    min-height: calc(100vh - 85px);
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(37, 99, 235, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(59, 130, 246, 0.10),
+            transparent 30%
+        ),
+        #f4f7fc;
+
+    padding: 45px 25px 60px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   MAIN BOOKING CARD
+========================================= */
+
+.booking-card {
+    width: 100%;
+    max-width: 760px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid #e5eaf1;
+
+    border-radius: 28px;
+
+    padding: 42px 45px 45px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 55px rgba(15, 23, 42, 0.10);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+.booking-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.07);
+
+    top: -100px;
+    right: -80px;
+}
+
+
+/* Second decorative circle */
+
+.booking-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: rgba(59, 130, 246, 0.05);
+
+    bottom: -60px;
+    left: -40px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.booking-card h1 {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    margin: 0;
+
+    color: #1d4ed8;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.booking-card .subtitle {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin: 12px 0 35px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.booking-form {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.booking-form label {
+    color: #1e293b;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-top: 8px;
+
+    display: block;
+}
+
+
+/* =========================================
+   INPUTS + SELECTS
+========================================= */
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+
+    height: 54px;
+
+    box-sizing: border-box;
+
+    border: 1.5px solid #dbe3ef;
+
+    border-radius: 13px;
+
+    background: #f8fafc;
+
+    padding: 0 16px;
+
+    font-size: 15px;
+
+    color: #1e293b;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.booking-form input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.booking-form input:hover,
+.booking-form select:hover {
+    border-color: #93c5fd;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.booking-form input:focus,
+.booking-form select:focus {
+    background: white;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.10);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   DATE INPUT
+========================================= */
+
+.booking-form input[type="date"] {
+    cursor: pointer;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   BOOK SERVICE BUTTON
+========================================= */
+
+.booking-form button {
+    width: 100%;
+
+    height: 56px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 22px rgba(37, 99, 235, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* Button hover */
+
+.booking-form button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(37, 99, 235, 0.30);
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #1e40af
+        );
+}
+
+
+/* Button click */
+
+.booking-form button:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.20);
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.success-message {
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 20px;
+
+    padding: 14px 17px;
+
+    border-radius: 12px;
+
+    background: #ecfdf5;
+
+    border: 1px solid #bbf7d0;
+
+    color: #15803d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    animation: bookingSuccess 0.35s ease;
+}
+
+
+/* =========================================
+   SUCCESS ANIMATION
+========================================= */
+
+@keyframes bookingSuccess {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    .booking-page {
+        padding: 25px 15px 45px;
+    }
+
+
+    .booking-card {
+        padding: 32px 22px 35px;
+
+        border-radius: 22px;
+    }
+
+
+    .booking-card h1 {
+        font-size: 28px;
+    }
+
+
+    .booking-card .subtitle {
+        font-size: 13px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .booking-form input,
+    .booking-form select {
+        height: 52px;
+    }
+
+
+    .booking-form button {
+        height: 54px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .booking-page {
+        padding: 20px 10px 35px;
+    }
+
+
+    .booking-card {
+        padding: 28px 17px 30px;
+    }
+
+
+    .booking-card h1 {
+        font-size: 24px;
+    }
+
+
+    .booking-card .subtitle {
+        font-size: 12px;
+    }
+
+
+    .booking-form label {
+        font-size: 13px;
+    }
+
+
+    .booking-form input,
+    .booking-form select {
+        font-size: 14px;
+    }
+}

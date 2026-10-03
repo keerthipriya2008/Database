@@ -1,0 +1,459 @@
+/* =========================================
+   TECHNICIAN PAGE
+========================================= */
+
+.technician-page {
+    min-height: calc(100vh - 80px);
+
+    background: #f4f7fb;
+
+    padding: 40px 6%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.technician-header {
+    max-width: 1150px;
+
+    margin: 0 auto 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.technician-label {
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.technician-header h1 {
+    margin: 7px 0;
+
+    color: #172554;
+
+    font-size: 34px;
+}
+
+.technician-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+.technician-count {
+    background: #eaf2ff;
+
+    color: #2563eb;
+
+    padding: 11px 18px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TECHNICIAN GRID
+========================================= */
+
+.technician-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   TECHNICIAN CARD
+========================================= */
+
+.technician-card {
+    background: white;
+
+    border: 1px solid #e5eaf2;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    transition: 0.25s ease;
+}
+
+.technician-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.12);
+
+    border-color: #d4e2ff;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.technician-profile {
+    padding: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    border-bottom: 1px solid #edf1f6;
+}
+
+.technician-avatar {
+    width: 72px;
+
+    height: 72px;
+
+    min-width: 72px;
+
+    border-radius: 18px;
+
+    background: #eaf2ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+}
+
+.assigned-text {
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.technician-profile h2 {
+    margin: 4px 0 2px;
+
+    color: #172554;
+
+    font-size: 21px;
+}
+
+.technician-profile p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.rating {
+    margin-top: 7px;
+
+    font-size: 13px;
+
+    color: #f59e0b;
+}
+
+.rating strong {
+    color: #172554;
+}
+
+.rating span {
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.technician-details {
+    padding: 18px 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.detail-box {
+    background: #f8fafc;
+
+    border: 1px solid #e8edf3;
+
+    border-radius: 12px;
+
+    padding: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.detail-box > span {
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 9px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+}
+
+.detail-box small {
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 3px;
+}
+
+.detail-box strong {
+    color: #172033;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.technician-service {
+    margin: 0 24px 18px;
+
+    padding: 14px;
+
+    background: #f8fbff;
+
+    border: 1px solid #dce9ff;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.technician-service span {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.technician-service h3 {
+    margin: 5px 0 0;
+
+    color: #172554;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.working-badge,
+.available-badge {
+    padding: 7px 10px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.working-badge {
+    background: #fff7df;
+
+    color: #b45309;
+}
+
+.available-badge {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.technician-footer {
+    padding: 12px 24px;
+
+    background: #fafcff;
+
+    border-top: 1px solid #edf1f6;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   BOTTOM INFORMATION
+========================================= */
+
+.technician-bottom {
+    max-width: 1150px;
+
+    margin: 25px auto 0;
+
+    background: #eaf2ff;
+
+    border-radius: 16px;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.technician-bottom-icon {
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.technician-bottom strong {
+    color: #1e40af;
+
+    font-size: 14px;
+}
+
+.technician-bottom p {
+    margin: 4px 0 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .technician-page {
+        padding: 25px 15px;
+    }
+
+    .technician-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .technician-header h1 {
+        font-size: 28px;
+    }
+
+    .technician-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technician-profile {
+        padding: 20px;
+    }
+
+    .technician-details {
+        padding: 16px 20px;
+    }
+
+    .technician-service {
+        margin: 0 20px 16px;
+    }
+
+    .technician-footer {
+        padding: 12px 20px;
+    }
+}

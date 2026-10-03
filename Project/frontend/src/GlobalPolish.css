@@ -1,0 +1,136 @@
+/* =========================================
+   GLOBAL POLISH
+   Buttons + Cards + Spacing
+========================================= */
+
+
+/* =========================================
+   BUTTON POLISH
+========================================= */
+
+button {
+    font-family: inherit;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   CARD POLISH
+========================================= */
+
+.card,
+.service-card,
+.booking-card,
+.notification-card,
+.technician-card,
+.profile-card,
+.feedback-card,
+.payment-card,
+.history-card {
+    border-radius: 18px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Card hover effect */
+
+.card:hover,
+.service-card:hover,
+.booking-card:hover,
+.notification-card:hover,
+.technician-card:hover,
+.profile-card:hover,
+.feedback-card:hover,
+.payment-card:hover,
+.history-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1,
+h2,
+h3 {
+    letter-spacing: -0.3px;
+}
+
+
+/* =========================================
+   INPUT POLISH
+========================================= */
+
+input,
+select,
+textarea {
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Input focus */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   PAGE SPACING
+========================================= */
+
+.services-page,
+.profile-page,
+.notifications-page,
+.technician-page,
+.feedback-page,
+.payment-page,
+.history-page {
+    padding: 35px 25px 50px;
+}
+
+
+/* =========================================
+   MOBILE SPACING
+========================================= */
+
+@media (max-width: 700px) {
+
+    .services-page,
+    .profile-page,
+    .notifications-page,
+    .technician-page,
+    .feedback-page,
+    .payment-page,
+    .history-page {
+        padding: 25px 15px 40px;
+    }
+}

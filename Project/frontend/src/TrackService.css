@@ -1,0 +1,945 @@
+/* =========================================
+   TRACK SERVICE - PROFESSIONAL DESIGN
+========================================= */
+
+.track-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+    padding: 45px 7%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+
+.track-top {
+    max-width: 1050px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-title {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.track-top h1 {
+    margin: 8px 0 6px;
+    color: #172554;
+    font-size: 38px;
+}
+
+.track-top p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.live-badge {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 11px 18px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.live-badge span {
+    margin-right: 7px;
+}
+
+
+/* BOOKING CARD */
+
+.vehicle-track-card {
+    max-width: 1050px;
+    margin: 0 auto 35px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.08);
+
+    border: 1px solid #e5eaf2;
+}
+
+
+/* VEHICLE HEADER */
+
+.vehicle-banner {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color: white;
+
+    padding: 28px 32px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.vehicle-icon {
+    width: 68px;
+    height: 68px;
+
+    background: rgba(255,255,255,0.16);
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+.vehicle-title {
+    flex: 1;
+}
+
+.vehicle-title span,
+.booking-number span {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    opacity: 0.75;
+}
+
+.vehicle-title h2 {
+    margin: 5px 0;
+
+    font-size: 27px;
+}
+
+.vehicle-title p {
+    margin: 0;
+
+    opacity: 0.85;
+
+    font-size: 14px;
+}
+
+.booking-number {
+    text-align: right;
+}
+
+.booking-number strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 23px;
+}
+
+
+/* SERVICE DETAILS */
+
+.service-details {
+    padding: 24px 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.detail-box {
+    background: #f8fafc;
+
+    border: 1px solid #e7edf5;
+
+    border-radius: 12px;
+
+    padding: 17px;
+}
+
+.detail-box span {
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 7px;
+}
+
+.detail-box strong {
+    color: #1e293b;
+
+    font-size: 14px;
+}
+
+.status-text {
+    color: #d97706 !important;
+}
+
+
+/* CURRENT STATUS */
+
+.current-status {
+    margin: 0 30px;
+
+    padding: 24px;
+
+    background: #f7faff;
+
+    border: 1px solid #dce8ff;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.section-tag {
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.current-status h2 {
+    margin: 7px 0;
+
+    color: #172033;
+
+    font-size: 20px;
+}
+
+.current-status p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.progress-number {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+.progress-number span {
+    font-size: 9px;
+
+    opacity: 0.8;
+
+    margin-top: 2px;
+}
+
+
+/* PROGRESS BAR */
+
+.progress-area {
+    padding: 18px 30px 28px;
+}
+
+.progress-bar {
+    width: 100%;
+
+    height: 9px;
+
+    background: #e8edf5;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #60a5fa
+    );
+
+    border-radius: 20px;
+
+    transition: width 0.5s ease;
+}
+
+
+/* JOURNEY */
+
+.journey-card {
+    margin: 0 30px 25px;
+
+    padding: 26px;
+
+    border: 1px solid #e6eaf0;
+
+    border-radius: 15px;
+
+    background: white;
+}
+
+.journey-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.journey-header h2 {
+    margin: 6px 0 0;
+
+    color: #172033;
+
+    font-size: 20px;
+}
+
+.step-count {
+    background: #eaf2ff;
+
+    color: #2563eb;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* TIMELINE */
+
+.timeline-item {
+    display: flex;
+
+    gap: 16px;
+
+    position: relative;
+
+    min-height: 68px;
+}
+
+.timeline-left {
+    position: relative;
+
+    width: 42px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.timeline-left::after {
+    content: "";
+
+    position: absolute;
+
+    top: 42px;
+
+    width: 2px;
+
+    height: 45px;
+
+    background: #e2e8f0;
+}
+
+.timeline-item:last-child
+.timeline-left::after {
+    display: none;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #94a3b8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    z-index: 2;
+}
+
+.timeline-item.completed .timeline-icon {
+    background: #dcfce7;
+
+    color: #16a34a;
+}
+
+.timeline-item.current .timeline-icon {
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px #eff6ff;
+}
+
+.timeline-content {
+    flex: 1;
+
+    padding-bottom: 18px;
+}
+
+.timeline-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.timeline-heading h3 {
+    margin: 2px 0 5px;
+
+    color: #1e293b;
+
+    font-size: 15px;
+}
+
+.timeline-heading span {
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    padding: 3px 8px;
+
+    border-radius: 12px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.timeline-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   BILL
+========================================= */
+
+.bill-card {
+    margin: 0 30px 25px;
+
+    padding: 26px;
+
+    background: #172554;
+
+    border-radius: 16px;
+
+    color: white;
+}
+
+.bill-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.bill-header .section-tag {
+    color: #93c5fd;
+}
+
+.bill-header h2 {
+    margin: 6px 0 0;
+
+    font-size: 20px;
+}
+
+.payment-pending {
+    background: #fef3c7;
+
+    color: #b45309;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.bill-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 10px 0;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
+
+.bill-row strong {
+    color: white;
+}
+
+.bill-line {
+    height: 1px;
+
+    background: rgba(255,255,255,0.15);
+
+    margin: 7px 0;
+}
+
+.bill-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 0 18px;
+
+    font-size: 16px;
+}
+
+.bill-total strong {
+    font-size: 24px;
+
+    color: #93c5fd;
+}
+
+.pay-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #1d4ed8;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.pay-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+}
+
+.payment-note {
+    text-align: center;
+
+    margin: 10px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* FOOTER */
+
+.service-footer {
+    margin: 0 30px 30px;
+
+    padding: 16px 20px;
+
+    background: #eff6ff;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
+.service-footer > span {
+    font-size: 23px;
+}
+
+.service-footer strong {
+    color: #1e40af;
+
+    font-size: 13px;
+}
+
+.service-footer p {
+    margin: 3px 0 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* NO SERVICE */
+
+.no-service {
+    max-width: 650px;
+
+    margin: 90px auto;
+
+    background: white;
+
+    padding: 55px 40px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(15,23,42,0.08);
+}
+
+.empty-car {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.no-service h2 {
+    color: #172554;
+
+    font-size: 27px;
+}
+
+.no-service p {
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+.empty-note {
+    margin-top: 25px;
+
+    padding: 13px;
+
+    background: #eaf2ff;
+
+    color: #2563eb;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+}
+
+
+/* LOADING */
+
+.track-loading,
+.track-error {
+    max-width: 500px;
+
+    margin: 100px auto;
+
+    text-align: center;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(15,23,42,0.08);
+}
+
+.loading-car {
+    font-size: 55px;
+
+    animation: carMove 1.2s infinite alternate;
+}
+
+@keyframes carMove {
+    from {
+        transform: translateX(-10px);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.track-loading h2,
+.track-error h2 {
+    color: #172554;
+}
+
+.track-loading p,
+.track-error p {
+    color: #64748b;
+}
+
+.error-icon {
+    font-size: 50px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .track-page {
+        padding: 25px 15px;
+    }
+
+    .track-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .track-top h1 {
+        font-size: 30px;
+    }
+
+    .vehicle-banner {
+        flex-wrap: wrap;
+    }
+
+    .booking-number {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .service-details {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+    .current-status {
+        margin: 0 20px;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .progress-area {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+    .journey-card,
+    .bill-card {
+        margin-left: 20px;
+
+        margin-right: 20px;
+    }
+
+    .service-footer {
+        margin-left: 20px;
+
+        margin-right: 20px;
+    }
+
+    .bill-header {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+}
+/* =========================================
+   TRACK SERVICE - DETAIL BOX ALIGNMENT FIX
+========================================= */
+
+.service-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+
+
+/* Individual boxes */
+
+.service-details .detail-box {
+    min-width: 0;
+    min-height: 92px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+
+/* Labels */
+
+.service-details .detail-box > span {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #8a9ab5;
+
+    letter-spacing: 1px;
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+/* Values */
+
+.service-details .detail-box > strong {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+    min-width: 0;
+
+    gap: 6px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #172033;
+
+    line-height: 1.3;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Status */
+
+.service-details .detail-box .status-text {
+    color: #f59e0b;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .service-details {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .service-details .detail-box {
+        min-height: 80px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .service-details {
+        gap: 12px;
+        margin: 20px 0;
+    }
+
+    .service-details .detail-box {
+        padding: 15px 16px;
+    }
+
+    .service-details .detail-box > span {
+        font-size: 13px;
+    }
+
+    .service-details .detail-box > strong {
+        font-size: 15px;
+    }
+}

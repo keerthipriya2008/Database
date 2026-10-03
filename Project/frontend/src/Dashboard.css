@@ -1,0 +1,260 @@
+/* =========================================
+   DASHBOARD NAVBAR
+========================================= */
+
+.dashboard {
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 18px 28px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e5eaf1;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================
+   LOGO AREA
+========================================= */
+
+.logo {
+    color: #1d4ed8;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    letter-spacing: -0.3px;
+}
+
+
+.welcome-text {
+    margin-top: 5px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   NAVIGATION BUTTONS
+========================================= */
+
+.nav-links button {
+    border: 1px solid transparent;
+
+    background: transparent;
+
+    color: #475569;
+
+    padding: 9px 12px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* Hover */
+
+.nav-links button:hover {
+    background: #eff6ff;
+
+    color: #1d4ed8;
+
+    border-color: #dbeafe;
+
+    transform: translateY(-1px);
+}
+
+
+/* Click */
+
+.nav-links button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.nav-links .logout-btn {
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    border-color: #fecaca;
+
+    margin-left: 5px;
+}
+
+
+.nav-links .logout-btn:hover {
+    background: #dc2626;
+
+    color: white;
+
+    border-color: #dc2626;
+
+    box-shadow:
+        0 6px 15px rgba(220, 38, 38, 0.18);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 18px 22px;
+    }
+
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 16px;
+    }
+
+
+    .nav-links {
+        gap: 6px;
+    }
+
+
+    .nav-links button {
+        font-size: 12px;
+
+        padding: 8px 10px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+
+    .welcome-text {
+        font-size: 12px;
+    }
+
+
+    .nav-links {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        width: 100%;
+
+        gap: 7px;
+    }
+
+
+    .nav-links button {
+        width: 100%;
+
+        padding: 10px 7px;
+
+        font-size: 12px;
+    }
+
+
+    .nav-links .logout-btn {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+}
